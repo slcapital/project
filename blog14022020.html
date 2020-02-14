@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="description" content="SL Capital is an investment blog...">
+  <meta name="author" content="Sean Lee" >
+  <meta name="keywords" content="investment, finance, money">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <!-- Description for search engine -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon16x16.png">
+<link rel="manifest" href="site.webmanifest">
+  <title> SL Capital </title>
+  <style>
+  .topnav {
+  font-size: 40px;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+  background-color: #b31875;
+  margin: -8px -8px 0 -8px;
+  padding: 15px 30px 15px 30px;
+  text-align: center;
+  display: grid;
+   grid-template-columns: auto auto auto auto auto auto;
+   grid-column-gap: 30px;
+  }
+  .blog {
+  margin: 25px 125px 25px 125px;
+  padding: 10px 20px 10px 20px;
+  background-color: rgb(255, 255, 255, 0.8);
+  }
+  h2 {
+  font-size: 30px;
+  }
+  h4 {
+  font-size: 25px;
+  }
+  p {
+  font-size: 20px;
+  }
+  .footerLeft {
+  width: 50%;
+  font-size: 25px;
+  display: grid;
+   grid-template-rows: auto auto auto auto auto;
+  }
+  [type='text']{
+  font-size: 15px;
+  }
+  body {
+  background-image: url("blog1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #fffeee;
+  }
+  footer {
+  background-color: #b31875;
+  margin: 15px -8px -8px -8px;
+  padding: 10px 15px 10px 15px;
+  display: grid;
+   grid-template-columns: auto auto;
+  }
+  a:link, a:visited {
+  text-decoration: none;
+  color: white;
+  }
+  a:hover {
+  background-color: white;
+  color: #b31875;
+  }
+  </style>
+ </head>
+ <body>
+  <header>
+   <nav>
+    <div class="topnav">
+     <a href="index.html"> Home </a>
+     <a href="thefund.html"> The Fund </a>
+     <a href="performance.html"> Performance </a>
+     <a href="blog.html"> Blog </a>
+     <a href="about.html"> About </a>
+     <img src="android-chrome-512x512.png" alt="logo" height="50" width="50">
+    </div>
+   </nav>
+  </header>
+  <main>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+  {
+  "symbols": [
+    {
+      "description": "IDVY",
+      "proName": "MIL:IDVY"
+    },
+    {
+      "description": "GLRE",
+      "proName": "MIL:GLRE"
+    },
+    {
+      "description": "VWRL",
+      "proName": "MIL:VWRL"
+    },
+    {
+      "description": "IEGA",
+      "proName": "EURONEXT:IEGA"
+    },
+    {
+      "description": "EGLN",
+      "proName": "LSE:EGLN"
+    }
+  ],
+  "colorTheme": "light",
+  "isTransparent": false,
+  "displayMode": "adaptive",
+  "locale": "en"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+   <div class="blog">
+   <h2 align="center"> Weekly Report 14 February 2020 </h2>
+   <h4 align="center"> <i> Published: 15/02/2020 </i> </h4>
+   <p> Following a positive week last week, markets started the week carrying the momentum. This momentum began to slow on Wednesday, with fears of the economic impact of climate change beginning to come to the forefront. If you saw the reduction in the fund price on Tuesday, this was due to trading (I only trade once a month which is why these changes aren’t regular). However, this turned around in the second half of the week with my trading endeavours working out how I planned alongside the market continuing its rally towards record highs. At this point most markets are up 5% from the pullback over a week ago, showing investors confidence in the markets. Here is the weekly change for each of the fund’s current holdings: </p>
+   <p id="vusa"></p>
+   <p id="vwrl"></p>
+   <p id="idvy"></p>
+   <p id="egln"></p>
+   <p id="glre"></p>
+   <p id="qdvw"></p>
+   <p id="p2p"></p>
+   <p id="trading"></p>
+   <script>
+   var vusa1= 118.5 - 117.16;
+   var vusa2= vusa1/117.16;
+   var vusa3= "VUSA " + ": " + vusa2*100 + "%";
+   var vwrl1= 88.24 - 87.52;
+   var vwrl2= vwrl1/87.52;
+   var vwrl3= "VWRL " + ": " + vwrl2*100 + "%";
+   var idvy1= 181.88 - 180.32;
+   var idvy2= idvy1/180.32;
+   var idvy3= "IDVY " + ": " + idvy2*100 + "%";
+   var egln1= 85.65 - 84.09;
+   var egln2= egln1/84.09;
+   var egln3= "EGLN " + ": " + egln2*100 + "%";
+   var glre1= 112.73 - 110.79;
+   var glre2= glre1/110.79;
+   var glre3= "GLRE " + ": " + glre2*100 + "%";
+   var qdvw1= 15.77 - 15.69;
+   var qdvw2= qdvw1/15.69;
+   var qdvw3= "QDVW " + ": " + qdvw2*100 + "%";
+   var p2p1= 206.18 - 206.18;
+   var p2p2= p2p1/206.18;
+   var p2p3= "Peer to Peer Lending " + ": " + p2p2*100 + "%";
+   var tra1= 796.27 - 625.84;
+   var tra2= tra1/625.84;
+   var tra3= "Trading " + ": " + tra2*100 + "%";
+  
+   document.getElementById("vusa").innerHTML = vusa3;
+   document.getElementById("vwrl").innerHTML = vwrl3;
+   document.getElementById("idvy").innerHTML = idvy3;
+   document.getElementById("egln").innerHTML = egln3;
+   document.getElementById("glre").innerHTML = glre3;
+   document.getElementById("qdvw").innerHTML = qdvw3;
+   document.getElementById("p2p").innerHTML = p2p3;
+   document.getElementById("trading").innerHTML = tra3;
+   </script>
+   </div>
+   </main>
+   <footer>
+    <div class="footerLeft">
+     <a href="index.html"> Home </a>
+     <a href="thefund.html"> The Fund </a>
+     <a href="performance.html"> Performance </a>
+     <a href="blog.html"> Blog </a>
+     <a href="about.html"> About </a>
+    </div>
+    <div class="footerRight">
+    </div>
+  </footer>
+ </body>
+</html>
