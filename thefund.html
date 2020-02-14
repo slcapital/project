@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="description" content="SL Capital is an investment blog...">
+  <meta name="author" content="Sean Lee" >
+  <meta name="keywords" content="investment, finance, money">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <!-- Description for search engine -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon16x16.png">
+<link rel="manifest" href="favicon_io/site.webmanifest">
+  <title> SL Capital </title>
+  <style>
+  .topnav {
+  font-size: 40px;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+  background-color: #b31875;
+  margin: -8px -8px 0 -8px;
+  padding: 15px 30px 15px 30px;
+  text-align: center;
+  display: grid;
+   grid-template-columns: auto auto auto auto auto auto;
+   grid-column-gap: 30px;
+  }
+  .top {
+  display: grid;
+   grid-template-columns: 50% 50%;
+   grid-column-gap: 20px;
+  }
+  #piechart {
+  border: solid;
+  margin: 10px 30px 10px 10px;
+  }
+  .current {
+  background-color: silver;
+  text-align: center;
+  margin: 10px 30px 10px 10px;
+  font-size: 30px;
+  height: 100px
+  }
+  .right {
+  display: grid;
+   grid-template-rows: 500px auto;
+   grid-row-gap: 20px;
+  }
+  .breakdown {
+  margin: 10px 10px 10px 10px;
+  background-color: #cce4ff;
+  padding: 10px 10px 10px 10px;
+  }
+  .footerLeft {
+  width: 50%;
+  font-size: 25px;
+  display: grid;
+   grid-template-rows: auto auto auto auto auto;
+  }
+  [type='text']{
+  font-size: 15px;
+  }
+  body {
+  background-color: #fffeee;
+  }
+  footer {
+  background-color: #b31875;
+  margin: 15px -8px -8px -8px;
+  padding: 10px 15px 10px 15px;
+  display: grid;
+   grid-template-columns: auto auto;
+  }
+  a:link, a:visited {
+  text-decoration: none;
+  color: white;
+  }
+  a:hover {
+  background-color: white;
+  color: #b31875;
+  }
+  </style>
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Asset', 'Weight'],
+          ['VWRL',     1000],
+          ['IEGA',      500],
+          ['IDVY',  100],
+          ['EGLN', 100],
+          ['GLRE',    100],
+          ['P2P', 100],
+          ['Trading', 100]
+        ]);
+
+        var options = {
+          title: 'Portfolio Weighting',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+ </head>
+ <body>
+  <header>
+   <nav>
+    <div class="topnav">
+     <a href="index.html"> Home </a>
+     <a href="thefund.html"> The Fund </a>
+     <a href="performance.html"> Performance </a>
+     <a href="blog.html"> Blog </a>
+     <a href="about.html"> About </a>
+     <img src="favicon_io/android-chrome-512x512.png" alt="logo" height="50" width="50">
+    </div>
+   </nav>
+  </header>
+  <main>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+  {
+  "symbols": [
+    {
+      "description": "IDVY",
+      "proName": "MIL:IDVY"
+    },
+    {
+      "description": "GLRE",
+      "proName": "MIL:GLRE"
+    },
+    {
+      "description": "VWRL",
+      "proName": "MIL:VWRL"
+    },
+    {
+      "description": "IEGA",
+      "proName": "EURONEXT:IEGA"
+    },
+    {
+      "description": "EGLN",
+      "proName": "LSE:EGLN"
+    }
+  ],
+  "colorTheme": "light",
+  "isTransparent": false,
+  "displayMode": "adaptive",
+  "locale": "en"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+    <section>
+     <div class="top">
+     <div class="breakdown">
+      <h2 style="text-align:center"> Breakdown </h2>
+       <p> <i> VWRL </i> - Vanguard FTSE All-World UCITS ETF (VWRL) tracks the performance of the FTSE All-World index, a market cap weighted index of large and mid cap companies in both developed and emerging markets. In short, this stock provides a diversified approach to the equity market, making it a must have for the average investor. For me, this should make up the largest portion of a portfolio, seen as equity has generally outperformed other asset classes over the long term. As shown on the graphic, VWRL makes up 50% of my ideal portfolio.</p>
+       <p> <i> IEGA </i> - iShares Core EUR Govt Bond UCITS ETF (IEGA) tracks the performance of the Barclays Euro Treasury Bond Index. This is a great safe haven for your money, especially if you are confident in European markets. This should be a substantial part of your fund but not a massive part, because while bonds are almost guarenteeing a payout, their returns are very low. Bonds are certainly a great asset to have in your portfolio, especially during a bear market or if you have a specific time period where you want to cash out on your fund(eg. retirement). For me, IEGA makes up 25% of my ideal portfolio.</p>
+       <p> <i> IDVY </i> - iShares Euro Dividend UCITS ETF (IDVY) tracks the performance of the Dow Jones EURO STOXX Select Dividend 30 Index. Dividend stocks have risen in popularity steadily over the past couple of years, due to the massive incentive of receiving semi-annually or quarterly payouts. Dividends are a great thing to have, particularly for investors with multiple projects. For most investors, high dividend yield assets are not going to make a massive difference to your portfolio, and so there is no reason for a large portion of high dividend yield equity. For me, IDVY makes up 5% of my ideal portfolio.</p>
+       <p> <i> EGLN </i> - iShares Physical Gold ETC (EGLN) tracks the day to day price of gold. Gold is typically seen as a safe haven for investors, and the price of gold tends to be non-cyclical to the market. This means when the market is down, gold is up. Seen as the market is generally trending up and gold is a commodity, your portfolio should only contain a small amount of gold. For me, EGLN makes up 5% of my ideal portfolio.</p>
+       <p> <i> GLRE </i> - SPDR Dow Jones Global Real Estate UCITS ETF (GLRE) tracks the performance of the Global Real Estate Securities Market. Real estate is a must have for all investors, however buying property yourself can be very expensive. REITs, or Real Estate Investment Trusts, are a great way for smaller investors to get into the real estate market. While real estate can be very profitable, it has been a very volatile market in recent times, so your portfolio shouldn't be real estate heavy. For me, GLRE makes up 5% of my ideal portfolio.</p>
+       <p> <i> P2P Lending </i> - Peer to peer lending (P2P), is a great way to start earning interest from providing loans. This is typically done through a peer to peer lending company, who act as a mediator between you and the companies seeking debt. It's also suitable for smaller investors, as you can start with as little as €50. However, there is a considerable degree of risk as you are lending to small and medium enterprises which have a greater chance of defaulting on their debts. For me, peer to peer lending makes up 5% of my ideal portfolio.</p>
+       <p> <i> Trading (optional) </i> - I've included trading on this list for anyone who has an interest in trading and likes to mess around and speculate. Trading should always be seen as a bit of fun with moderation, similar to betting. If you are taking a more conservative approach, this money should be spread out across the other pieces of the portfolio. For me, trading makes up 5% of my ideal portfolio.</p></div>
+       <div class="right">
+      <div id="piechart" style="width: auto; height: 500px;"></div>
+      <div class="current">
+      <h3> Current Fund Value: 1595.29</h3></div></div>
+     </section>
+  </main>
+  
+   <footer>
+    <div class="footerLeft">
+     <a href="index.html"> Home </a>
+     <a href="thefund.html"> The Fund </a>
+     <a href="performance.html"> Performance </a>
+     <a href="blog.html"> Blog </a>
+     <a href="about.html"> About </a>
+    </div>
+    <div class="footerRight">
+    </div>
+  </footer>
+ </body>
+</html>

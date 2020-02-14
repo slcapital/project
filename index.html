@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="description" content="SL Capital is an investment blog...">
+  <meta name="author" content="Sean Lee" >
+  <meta name="keywords" content="investment, finance, money">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <!-- Description for search engine -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon16x16.png">
+<link rel="manifest" href="favicon_io/site.webmanifest">
+  <title> SL Capital </title>
+  <style>
+  .log {
+  margin: 25px 25px 0 0;
+  text-align: center;
+  display: grid;
+   grid-template-rows; 0 0;
+  }
+  .top {
+  display: grid;
+   grid-template-columns: 66% 34%;
+   grid-column-gap: 20px;
+  }
+  .blog {
+  border-style: solid;
+  border-color: black;
+  background-color: #cce4ff;
+  margin: 15px 0 15px 0;
+  width: 66%;
+  display: grid;
+   grid-template-rows: auto auto auto;
+  }
+  .blogTitle {
+  text-align: center;
+  }
+  .blog1 {
+  border-top: solid;
+  }
+  .blog2 {
+  border-top: solid;
+  }
+  .blog3 {
+  border-top: solid;
+  }
+  #chart_div {
+  border-style: solid;
+  border-color: black;
+  margin: 25px 50px 0px 0px;
+  }
+  .topnav {
+  font-size: 40px;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+  background-color: #b31875;
+  margin: -8px -8px 0 -8px;
+  padding: 15px 30px 15px 30px;
+  text-align: center;
+  display: grid;
+   grid-template-columns: auto auto auto auto auto auto;
+   grid-column-gap: 30px;
+  }
+  .container {
+  display: grid;
+  text-align: center;
+  grid-template-rows: auto auto auto;
+  grid-row-gap: 10px;
+  border-style: solid;
+  border-color: black;
+  background-color: silver;
+  }
+  .footerLeft {
+  width: 50%;
+  font-size: 25px;
+  display: grid;
+   grid-template-rows: auto auto auto auto auto;
+  }
+  [type='text']{
+  font-size: 15px;
+  }
+  body {
+  background-color: #fffeee;
+  }
+  footer {
+  background-color: #b31875;
+  margin: 15px -8px -8px -8px;
+  padding: 10px 15px 10px 15px;
+  display: grid;
+   grid-template-columns: auto auto;
+  }
+  a:link, a:visited {
+  text-decoration: none;
+  color: white;
+  }
+  a:hover {
+  background-color: white;
+  color: #b31875;
+  }
+  </style>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Date', 'Value'],
+          ['10/01/2020',  905.33  ],
+          ['13/01/2020',  931.87  ],
+          ['14/01/2020',  1432.45 ],
+          ['15/01/2020',  1430.29 ],
+          ['16/01/2020',  1431.86 ],
+          ['17/01/2020',  1433.63 ],
+          ['20/01/2020',  1434.59 ],
+          ['21/01/2020',  1432.64 ],
+          ['22/01/2020',  1432.23 ],
+          ['23/01/2020',  1431.10 ],
+          ['24/01/2020',  1435.37 ],
+          ['27/01/2020',  1427.46 ],
+          ['28/01/2020',  1430.87 ],
+          ['29/01/2020',  1432.06 ],
+          ['30/01/2020',  1427.60 ],
+          ['31/01/2020',  1422.20 ],
+          ['03/02/2020',  1418.95 ],
+          ['04/02/2020',  1434.50 ],
+          ['05/02/2020',  1431.20 ],
+          ['06/02/2020',  1434.50 ],
+          ['07/02/2020',  1434.86 ],
+          ['10/02/2020',  1440.28 ],
+          ['11/02/2020',  1394.15 ],
+          ['12/02/2020',  1595.29 ],
+        ]);
+
+        var options = {
+          title: 'Fund Value 2020',
+          hAxis: {title: 'Value',  titleTextStyle: {color: '#333'}},
+          vAxis: {minValue: 0}
+        };
+
+        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+</script>
+ </head>
+ <body>
+  <header>
+   <nav>
+    <div class="topnav">
+     <a href="index.html"> Home </a>
+     <a href="thefund.html"> The Fund </a>
+     <a href="performance.html"> Performance </a>
+     <a href="blog.html"> Blog </a>
+     <a href="about.html"> About </a>
+     <img src="favicon_io/android-chrome-512x512.png" alt="logo" height="50" width="50">
+    </div>
+   </nav>
+  </header>
+  <main>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+  {
+  "symbols": [
+    {
+      "description": "IDVY",
+      "proName": "MIL:IDVY"
+    },
+    {
+      "description": "GLRE",
+      "proName": "MIL:GLRE"
+    },
+    {
+      "description": "VWRL",
+      "proName": "MIL:VWRL"
+    },
+    {
+      "description": "IEGA",
+      "proName": "EURONEXT:IEGA"
+    },
+    {
+      "description": "EGLN",
+      "proName": "LSE:EGLN"
+    }
+  ],
+  "colorTheme": "light",
+  "isTransparent": false,
+  "displayMode": "adaptive",
+  "locale": "en"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+    <section>
+     <div class="top">
+      <div id="chart_div" style="width: 100%; height: 400px;" ></div>
+      <div class="log">
+      <table border="3">
+       <tr>
+        <th colspan="2">
+         <h1> Log </h1>
+        </th>
+       <tr>
+       <tr>
+        <td> 14/01/2020 </td>
+        <td> Invested €500 </td>
+       </tr>
+      </table>
+      </div>
+    </section>
+    <section
+    <article>
+     <div class="blog">
+     <div class="blogTitle">
+     <h2> Blog </h2></div>
+     <div class ="blog1">
+     <section>
+      <a href="blog07022020.html"> <h3 style="color:black" align="center"> Weekly Report 07 February 2020 </h3>
+      <p style="color:black" align="center"> <i>Published: 08/02/2020 </i></p>
+      <p style="color:black" align="center"> Following the sell off across global markets due to corona virus fears, the markets began...</p> </a>
+     </section></div>
+     <div class="blog2">
+     <section>
+<a href="blog07022020.html"> <h3 style="color:black" align="center"> Weekly Report 07 February 2020 </h3>
+      <p style="color:black" align="center"> <i>Published: 08/02/2020 </i></p>
+      <p style="color:black" align="center"> Following the sell off across global markets due to corona virus fears, the markets began...</p> </a>
+     </section></div>
+     <div class="blog3">
+     <section>
+<a href="blog07022020.html"> <h3 style="color:black" align="center"> Weekly Report 07 February 2020 </h3>
+      <p style="color:black" align="center"> <i>Published: 08/02/2020 </i></p>
+      <p style="color:black" align="center"> Following the sell off across global markets due to corona virus fears, the markets began...</p> </a>
+     </section></div>
+     </div>
+   </article>
+  </main>
+  <div class="container">
+   <h3> Subscribe to our newsletter </h3>  
+   <form name="contact" netlify>
+  <p>
+    <label>Name <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Email <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
+  </div>
+  
+   <footer>
+    <div class="footerLeft">
+     <a href="index.html"> Home </a>
+     <a href="thefund.html"> The Fund </a>
+     <a href="performance.html"> Performance </a>
+     <a href="blog.html"> Blog </a>
+     <a href="about.html"> About </a>
+    </div>
+    <div class="footerRight">
+    </div>
+  </footer>
+ </body>
+</html> 

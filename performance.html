@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="description" content="SL Capital is an investment blog...">
+  <meta name="author" content="Sean Lee" >
+  <meta name="keywords" content="investment, finance, money">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <!-- Description for search engine -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon16x16.png">
+<link rel="manifest" href="favicon_io/site.webmanifest">
+  <title> SL Capital </title>
+  <style>
+  .topnav {
+  font-size: 40px;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+  background-color: #b31875;
+  margin: -8px -8px 0 -8px;
+  padding: 15px 30px 15px 30px;
+  text-align: center;
+  display: grid;
+   grid-template-columns: auto auto auto auto auto auto;
+   grid-column-gap: 30px;
+  }
+  #chart_div {
+  border-style: solid;
+  border-color: black;
+  margin: 25px 50px 0px 0px;
+  }
+  .top {
+  display: grid;
+   grid-template-columns: 66% 34%;
+      grid-column-gap: 25px;
+  }
+  table.b {
+  table-layout: auto;
+  }
+  .returns {
+  margin: 25px 25px 0 0;
+  background-color: silver;
+  text-align: center;
+  }
+  .expectedReturns {
+  margin: 25px 0 0px 0px;
+  text-align: center;
+  background-color: #cce4ff;
+  padding: 10px 0 10px 0;
+  }
+  .footerLeft {
+  width: 50%;
+  font-size: 25px;
+  display: grid;
+   grid-template-rows: auto auto auto auto auto;
+  }
+  [type='text']{
+  font-size: 15px;
+  }
+  body {
+  background-color: #fffeee;
+  }
+  footer {
+  background-color: #b31875;
+  margin: 15px -8px -8px -8px;
+  padding: 10px 15px 10px 15px;
+  display: grid;
+   grid-template-columns: auto auto;
+  }
+  a:link, a:visited {
+  text-decoration: none;
+  color: white;
+  }
+  a:hover {
+  background-color: white;
+  color: #b31875;
+  }
+  </style>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Date', 'Value'],
+          ['10/01/2020',  905.33  ],
+          ['13/01/2020',  931.87  ],
+          ['14/01/2020',  1432.45 ],
+          ['15/01/2020',  1430.29 ],
+          ['16/01/2020',  1431.86 ],
+          ['17/01/2020',  1433.63 ],
+          ['20/01/2020',  1434.59 ],
+          ['21/01/2020',  1432.64 ],
+          ['22/01/2020',  1432.23 ],
+          ['23/01/2020',  1431.10 ],
+          ['24/01/2020',  1435.37 ],
+          ['27/01/2020',  1427.46 ],
+          ['28/01/2020',  1430.87 ],
+          ['29/01/2020',  1432.06 ],
+          ['30/01/2020',  1427.60 ],
+          ['31/01/2020',  1422.20 ],
+          ['03/02/2020',  1418.95 ],
+          ['04/02/2020',  1434.50 ],
+          ['05/02/2020',  1431.20 ],
+          ['06/02/2020',  1434.50 ],
+          ['07/02/2020',  1434.86 ],
+          ['10/02/2020',  1440.28 ],
+          ['11/02/2020',  1394.15 ],
+          ['12/02/2020',  1595.29 ],
+        ]);
+
+        var options = {
+          title: 'Fund Value All Time',
+          hAxis: {title: 'Value',  titleTextStyle: {color: '#333'}},
+          vAxis: {minValue: 0}
+        };
+
+        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+ </script>
+
+ </head>
+ <body>
+  <header>
+   <nav>
+    <div class="topnav">
+     <a href="index.html"> Home </a>
+     <a href="thefund.html"> The Fund </a>
+     <a href="performance.html"> Performance </a>
+     <a href="blog.html"> Blog </a>
+     <a href="about.html"> About </a>
+     <img src="favicon_io/android-chrome-512x512.png" alt="logo" height="50" width="50">
+    </div>
+   </nav>
+  </header>
+  <main>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+  {
+  "symbols": [
+    {
+      "description": "IDVY",
+      "proName": "MIL:IDVY"
+    },
+    {
+      "description": "GLRE",
+      "proName": "MIL:GLRE"
+    },
+    {
+      "description": "VWRL",
+      "proName": "MIL:VWRL"
+    },
+    {
+      "description": "IEGA",
+      "proName": "EURONEXT:IEGA"
+    },
+    {
+      "description": "EGLN",
+      "proName": "LSE:EGLN"
+    }
+  ],
+  "colorTheme": "light",
+  "isTransparent": false,
+  "displayMode": "adaptive",
+  "locale": "en"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+  </main>
+  <section>
+   <div class="top">
+   <div id="chart_div" style="width: 100%; height: 400px;" ></div>
+   <div class="returns">
+   <h2> Returns </h2>
+    <h4 id="ytd"></h4>
+    <h4 id="yr1"></h4>
+    <h4 id="yr5"></h4>
+    <h4 id="max"></h4></div></div>
+   <script>
+ var x = 1595.29
+ var y = 500
+ var ytda = x - y - 905.33;
+ var ytdb = ytda/905.33;
+ var ytdc = "YTD " + ": " + ytdb*100 + "%";
+ var yr1a = x - y - 905.33;
+ var yr1b = yr1a/905.33;
+ var yr1c = "1 Year " + ": " + yr1b*100 + "%";
+ var yr5a = x - y - 905.33;
+ var yr5b = yr5a/905.33;
+ var yr5c = "5 Years " + ": " + yr5b*100 + "%";
+ var maxa = x - y - 905.33;
+ var maxb = maxa/905.33;
+ var maxc = "Max " + ": " + maxb*100 + "%";
+ document.getElementById("ytd").innerHTML = ytdc;
+ document.getElementById("yr1").innerHTML = yr1c;
+ document.getElementById("yr5").innerHTML = yr5c;
+ document.getElementById("max").innerHTML = maxc;
+ </script>
+   <div class="expectedReturns">
+   <h2> Expected Returns </h2>
+   <table class="b" border="3" align="center">
+    <tr>
+     <th> <h3> Name </h3> </th>
+     <th> <h3> 1 Month </h3> </th>
+     <th> <h3> 6 Months </h3> </th>
+     <th> <h3> 1 Year </h3> </th>
+     <th> <h3> 5 Years </h3> </th>
+     <th> <h3> 10 Years </h3> </th>
+     <th> <h3> 25 Years </h3> </th>
+     <th> <h3> 50 Years </h3> </th>
+    </tr>
+    <tr> 
+     <td> VWRL </td> 
+     <td id="vwrla"></td>
+     <td id="vwrlb"></td>
+     <td id="vwrlc"></td>
+     <td id="vwrld"></td>
+     <td id="vwrle"></td>
+     <td id="vwrlf"></td>
+     <td id="vwrlg"></td>
+    </tr>
+    <tr> 
+     <td> IEGA </td> 
+     <td id="iegaa"></td>
+     <td id="iegab"></td>
+     <td id="iegac"></td>
+     <td id="iegad"></td>
+     <td id="iegae"></td>
+     <td id="iegaf"></td>
+     <td id="iegag"></td>
+    </tr>
+    <tr> 
+     <td> IDVY </td> 
+     <td id="idvya"></td>
+     <td id="idvyb"></td>
+     <td id="idvyc"></td>
+     <td id="idvyd"></td>
+     <td id="idvye"></td>
+     <td id="idvyf"></td>
+     <td id="idvyg"></td>
+    </tr>
+    <tr> 
+     <td> EGLN </td> 
+     <td id="eglna"></td>
+     <td id="eglnb"></td>
+     <td id="eglnc"></td>
+     <td id="eglnd"></td>
+     <td id="eglne"></td>
+     <td id="eglnf"></td>
+     <td id="eglng"></td>
+    </tr>
+    <tr> 
+     <td> GLRE </td> 
+     <td id="gla"></td>
+     <td id="glb"></td>
+     <td id="glc"></td>
+     <td id="gld"></td>
+     <td id="gle"></td>
+     <td id="glf"></td>
+     <td id="glg"></td>
+    </tr>
+    <tr> 
+     <td> P2P Lending </td> 
+     <td id="p2pa"></td>
+     <td id="p2pb"></td>
+     <td id="p2pc"></td>
+     <td id="p2pd"></td>
+     <td id="p2pe"></td>
+     <td id="p2pf"></td>
+     <td id="p2pg"></td>
+    </tr>
+    </table>
+   </div>
+  <script>
+  var vwrla = 0.00802278;
+  var vwrla1 = vwrla * 100 + "%";
+  var vwrlb = ((1 * (vwrla + 1) ** 6) - 1) * 100 + "%";
+  var vwrlc = ((1 * (vwrla + 1) ** 12) - 1) * 100 + "%";
+  var vwrld = ((1 * (vwrla + 1) ** 60) - 1) * 100 + "%";
+  var vwrle = ((1 * (vwrla + 1) ** 120) - 1) * 100 + "%";
+  var vwrlf = ((1 * (vwrla + 1) ** 300) - 1) * 100 + "%";
+  var vwrlg = ((1 * (vwrla + 1) ** 600) - 1) * 100 + "%";
+  document.getElementById("vwrla").innerHTML = vwrla1;
+  document.getElementById("vwrlb").innerHTML = vwrlb;
+  document.getElementById("vwrlc").innerHTML = vwrlc; 
+  document.getElementById("vwrld").innerHTML = vwrld;
+  document.getElementById("vwrle").innerHTML = vwrle;
+  document.getElementById("vwrlf").innerHTML = vwrlf;
+  document.getElementById("vwrlg").innerHTML = vwrlg;
+
+  var iegaa = 0.0021547;
+  var iegaa1 = iegaa * 100 + "%";
+  var iegab = ((1 * (iegaa + 1) ** 6) - 1) * 100 + "%";
+  var iegac = ((1 * (iegaa + 1) ** 12) - 1) * 100 + "%";
+  var iegad = ((1 * (iegaa + 1) ** 60) - 1) * 100 + "%";
+  var iegae = ((1 * (iegaa + 1) ** 120) - 1) * 100 + "%";
+  var iegaf = ((1 * (iegaa + 1) ** 300) - 1) * 100 + "%";
+  var iegag = ((1 * (iegaa + 1) ** 600) - 1) * 100 + "%";
+  document.getElementById("iegaa").innerHTML = iegaa1;
+  document.getElementById("iegab").innerHTML = iegab;
+  document.getElementById("iegac").innerHTML = iegac; 
+  document.getElementById("iegad").innerHTML = iegad;
+  document.getElementById("iegae").innerHTML = iegae;
+  document.getElementById("iegaf").innerHTML = iegaf;
+  document.getElementById("iegag").innerHTML = iegag;
+ 
+  var idvya = 0.0025006;
+  var idvya1 = idvya * 100 + "%";
+  var idvyb = ((1 * (idvya + 1) ** 6) - 1) * 100 + "%";
+  var idvyc = ((1 * (idvya + 1) ** 12) - 1) * 100 + "%";
+  var idvyd = ((1 * (idvya + 1) ** 60) - 1) * 100 + "%";
+  var idvye = ((1 * (idvya + 1) ** 120) - 1) * 100 + "%";
+  var idvyf = ((1 * (idvya + 1) ** 300) - 1) * 100 + "%";
+  var idvyg = ((1 * (idvya + 1) ** 600) - 1) * 100 + "%";
+  document.getElementById("idvya").innerHTML = idvya1;
+  document.getElementById("idvyb").innerHTML = idvyb;
+  document.getElementById("idvyc").innerHTML = idvyc; 
+  document.getElementById("idvyd").innerHTML = idvyd;
+  document.getElementById("idvye").innerHTML = idvye;
+  document.getElementById("idvyf").innerHTML = idvyf;
+  document.getElementById("idvyg").innerHTML = idvyg;
+
+  var eglna = 0.0027426;
+  var eglna1 = eglna * 100 + "%";
+  var eglnb = ((1 * (eglna + 1) ** 6) - 1) * 100 + "%";
+  var eglnc = ((1 * (eglna + 1) ** 12) - 1) * 100 + "%";
+  var eglnd = ((1 * (eglna + 1) ** 60) - 1) * 100 + "%";
+  var eglne = ((1 * (eglna + 1) ** 120) - 1) * 100 + "%";
+  var eglnf = ((1 * (eglna + 1) ** 300) - 1) * 100 + "%";
+  var eglng = ((1 * (eglna + 1) ** 600) - 1) * 100 + "%";
+  document.getElementById("eglna").innerHTML = eglna1;
+  document.getElementById("eglnb").innerHTML = eglnb;
+  document.getElementById("eglnc").innerHTML = eglnc; 
+  document.getElementById("eglnd").innerHTML = eglnd;
+  document.getElementById("eglne").innerHTML = eglne;
+  document.getElementById("eglnf").innerHTML = eglnf;
+  document.getElementById("eglng").innerHTML = eglng;
+
+  var glrea = 0.006209;
+  var glrea1 = glrea * 100 + "%";
+  var glreb = ((1 * (glrea + 1) ** 6) - 1) * 100 + "%";
+  var glrec = ((1 * (glrea + 1) ** 12) - 1) * 100 + "%";
+  var glred = ((1 * (glrea + 1) ** 60) - 1) * 100 + "%";
+  var glree = ((1 * (glrea + 1) ** 120) - 1) * 100 + "%";
+  var glref = ((1 * (glrea + 1) ** 300) - 1) * 100 + "%";
+  var glreg = ((1 * (glrea + 1) ** 600) - 1) * 100 + "%";
+  document.getElementById("gla").innerHTML = glrea1;
+  document.getElementById("glb").innerHTML = glreb;
+  document.getElementById("glc").innerHTML = glrec; 
+  document.getElementById("gld").innerHTML = glred;
+  document.getElementById("gle").innerHTML = glree;
+  document.getElementById("glf").innerHTML = glref;
+  document.getElementById("glg").innerHTML = glreg;
+
+  var p2pa = 0.0037666;
+  var p2pa1 = p2pa * 100 + "%";
+  var p2pb = ((1 * (p2pa + 1) ** 6) - 1) * 100 + "%";
+  var p2pc = ((1 * (p2pa + 1) ** 12) - 1) * 100 + "%";
+  var p2pd = ((1 * (p2pa + 1) ** 60) - 1) * 100 + "%";
+  var p2pe = ((1 * (p2pa + 1) ** 120) - 1) * 100 + "%";
+  var p2pf = ((1 * (p2pa + 1) ** 300) - 1) * 100 + "%";
+  var p2pg = ((1 * (p2pa + 1) ** 600) - 1) * 100 + "%";
+  document.getElementById("p2pa").innerHTML = p2pa1;
+  document.getElementById("p2pb").innerHTML = p2pb;
+  document.getElementById("p2pc").innerHTML = p2pc; 
+  document.getElementById("p2pd").innerHTML = p2pd;
+  document.getElementById("p2pe").innerHTML = p2pe;
+  document.getElementById("p2pf").innerHTML = p2pf;
+  document.getElementById("p2pg").innerHTML = p2pg;
+  </script>
+  </section>
+   <footer>
+    <div class="footerLeft">
+     <a href="index.html"> Home </a>
+     <a href="thefund.html"> The Fund </a>
+     <a href="performance.html"> Performance </a>
+     <a href="blog.html"> Blog </a>
+     <a href="about.html"> About </a>
+    </div>
+    <div class="footerRight">
+    </div>
+  </footer>
+ </body>
+</html>
