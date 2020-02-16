@@ -87,14 +87,25 @@
   border-color: black;
   background-color: silver;
   }
+  @media screen and (min-width: 900px) {
   .footerLeft {
   width: 50%;
   font-size: 25px;
   display: grid;
    grid-template-rows: auto auto auto auto auto;
   }
+  }
+  @media screen and (max-width: 900px) {
+  .footerLeft {
+  width: 50%;
+  font-size: 15px;
+  display: grid;
+   grid-template-rows: auto auto auto auto auto;
+   }
+   }
   .addthis_inline_follow_toolbox {
    width: 35%;
+   float: right;
    }
   [type='text']{
   font-size: 15px;
