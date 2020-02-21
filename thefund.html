@@ -68,7 +68,7 @@
   height: 100px
   }
   }
-  @media screen and (min-width: 900px) {
+  @media screen and (max-width: 900px) {
   .current {
   background-color: silver;
   text-align: center;
@@ -82,10 +82,20 @@
    grid-template-rows: 500px auto;
    grid-row-gap: 20px;
   }
+  @media screen and (min-width: 900px) {
   .breakdown {
   margin: 10px 10px 10px 10px;
   background-color: #cce4ff;
   padding: 10px 10px 10px 10px;
+  }
+  }
+  @media screen and (max-width: 900px) {
+  .breakdown {
+  margin: 10px 10px 10px 10px;
+  background-color: #cce4ff;
+  padding: 10px 10px 10px 10px;
+  font-size: 15px;
+  }
   }
   @media screen and (min-width: 900px) {
   .footerLeft {
