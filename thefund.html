@@ -55,9 +55,17 @@
    grid-row-gap: 20px;
   }
   }
+  @media screen and (min-width: 900px) {
   #piechart {
   border: solid;
   margin: 10px 30px 10px 10px;
+  }
+  }
+  @media screen and (max-width: 900px) {
+  #piechart {
+  border: solid;
+  margin: 10px 10px 10px 10px;
+  }
   }
   @media screen and (min-width: 900px) {
   .current {
@@ -72,7 +80,7 @@
   .current {
   background-color: silver;
   text-align: center;
-  margin: 10px 30px 10px 10px;
+  margin: 10px 10px 10px 10px;
   font-size: 20px;
   height: 66px
   }
