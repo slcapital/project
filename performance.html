@@ -74,10 +74,19 @@
   table.b {
   table-layout: auto;
   }
+  @media screen and (min-width: 900px) {
   .returns {
   margin: 25px 25px 0 0;
   background-color: silver;
   text-align: center;
+  }
+  }
+  @media screen and (max-width: 900px) {
+  .returns {
+  margin: 25px 0px 0 0;
+  background-color: silver;
+  text-align: center;
+  }
   }
   @media screen and (min-width: 900px) {
   .expectedReturns {
@@ -93,7 +102,7 @@
   text-align: center;
   background-color: #cce4ff;
   padding: 10px 0 10px 0;
-  font-size: 5px;
+  font-size: 4px;
   }
   }
   @media screen and (min-width: 900px) {
