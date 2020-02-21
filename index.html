@@ -20,11 +20,21 @@
   display: grid;
    grid-template-rows; 0 0;
   }
+  @media screen and (min-width: 900px) {
   .top {
   display: grid;
    grid-template-columns: 66% 34%;
    grid-column-gap: 20px;
   }
+  }
+  @media screen and (max-width: 900px) {
+  .top {
+  display: grid;
+   grid-template-rows: 66% 34%;
+   grid-row-gap: 20px;
+  }
+  }
+  @media screen and (min-width: 900px) {
   .blog {
   border-style: solid;
   border-color: black;
@@ -33,6 +43,18 @@
   width: 66%;
   display: grid;
    grid-template-rows: auto auto auto;
+  }
+  }
+  @media screen and (max-width: 900px) {
+  .blog {
+  border-style: solid;
+  border-color: black;
+  background-color: #cce4ff;
+  margin: 15px 0 15px 0;
+  width: 100%;
+  display: grid;
+   grid-template-rows: auto auto auto;
+  }
   }
   .blogTitle {
   text-align: center;
